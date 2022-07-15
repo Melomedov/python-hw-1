@@ -9,7 +9,10 @@
 
 
 def oddOrEven(num):
-    print('Напишіть логіку тут...')
+    if num % 2 == 0:
+        print('Число Четное')
+    else:
+        print('ЧИсло Не четное')
 
-oddOrEven(1) # 'Число Х є непарним'
+oddOrEven(1) # 'Число Х є непарним's
 oddOrEven(20) # 'Число Х є парним'
