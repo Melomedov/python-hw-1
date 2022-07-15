@@ -16,11 +16,19 @@
 #   transformStr('up') - > 'UP' (Починается на U)
 #   transformStr('Luxery') - > 'luxer...' (Починается на L + довжина більше 5 символів)
 
-
 def transformStr(str):
-    print('Напишіть логіку тут...')
+    if len(str) >5 :
+        str=str[:5] +"..."
+    if str[0] == 'l' or str[0] =='L': 
+        str = str.lower()
+    if str[0] == 'u' or str[0]=='U':
+        str = str.upper()
+
+    print(str)
+ 
 
 transformStr('Testing string') # 'Testi...' (довжина більше 5 символів)
 transformStr('Lux') # 'lux' (Починается на L)
 transformStr('up') # 'UP' (Починается на U)
 transformStr('Luxery') # 'luxer...' (Починается на L + довжина більше 5 символів)
+transformStr('fggj')
