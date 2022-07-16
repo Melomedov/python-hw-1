@@ -27,9 +27,12 @@
 
 # Для числа 2 потріботно повернути 2, тому що число 2 складається з однієї цифри.
 
-
 def sumNum(num):
+
+    while num > 9:
+        num = sum(map(int,str(num)))
     return num
+
 
 print(sumNum(38) == 2) 
 print(sumNum(40) == 4)
