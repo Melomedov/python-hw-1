@@ -16,7 +16,12 @@
 
 
 def commonStr(str1, str2):
-    return ''
+    zet = set(str1).intersection(set(str2))
+    end =''
+    for x in zet: end += x
+    print (end)  
+    return end
+
 
 print(commonStr('loli', 'luck') == 'l') 
-print(commonStr('good day', 'good morning') == 'god') 
+print(commonStr('good day', 'good morning') == 'god')
